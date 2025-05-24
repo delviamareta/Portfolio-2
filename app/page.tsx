@@ -4,7 +4,7 @@ import { ProjectSection } from "@/components/sections/project-section"
 
 export default function Page() {
   return (
-    <main className="">
+    <main className="bg-gray-200">
       <HeroSection />
       <AboutSection />
       <ProjectSection />

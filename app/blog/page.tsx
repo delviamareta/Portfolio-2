@@ -1,4 +1,5 @@
 import { posts } from "#site/content"
+import Link from "next/link"
 
 import { sortPosts } from "@/lib/utils"
 
@@ -12,9 +13,9 @@ export default async function Page() {
           {sortedPosts.map((post) => {
             const { title, slug } = post
             return (
-              <li key={title}>
+              <Link href={slug}>
                 <p>{title}</p>
-              </li>
+              </Link>
             )
           })}
         </ul>
